@@ -13,6 +13,7 @@
   font-weight: bolder;
   border: none;
   border-radius: 3em;
+  outline: none;
   cursor: pointer;
 }
 
@@ -20,5 +21,14 @@
   background-color: white;
   color: black;
   border: 1px solid black;
+}
+
+.custom-button.google-sign-in {
+  background-color: blue;
+  color: white;
+}
+
+.custom-button.google-sign-in:hover {
+  background-color: #983f3f;
 }
 /*# sourceMappingURL=CustomButtonComponent.css.map */
