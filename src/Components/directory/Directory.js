@@ -11,33 +11,33 @@ class Directory extends React.Component {
         this.state = {
             sections: [
                 {
-                    title: 'hats',
-                    imageUrl: 'https://images.unsplash.com/photo-1534215754734-18e55d13e346?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
+                    title: 'medicine',
+                    imageUrl: 'https://images.unsplash.com/photo-1571942794251-9f3027e2e485?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80',
                     id: 1,
-                    linkUrl: 'hat'
+                    linkUrl: 'shop'
                 },
                 {
-                    title: 'jackets',
-                    imageUrl: 'https://ksr-ugc.imgix.net/assets/003/513/473/0e6933dffd38f2fb6809188783f7bbab_original.jpg?ixlib=rb-2.1.0&w=700&fit=max&v=1427474334&auto=format&frame=1&q=92&s=fe4aae44b6705bd6b85aaf0db9c10c87',
+                    title: 'Body Checkup',
+                    imageUrl: 'https://www.primarycaresimplified.com/wp-content/uploads/2019/07/family-doctor-in-keller.png',
                     id: 2,
                     linkUrl: ''
                 },
                 {
-                    title: 'sneakers',
-                    imageUrl: 'http://www.smandrews.com/images/shoes1/Nike-Wmns-Air-Max-90-SE-Black-Black-Gum-Light-Brown-jdLOk0qFc.jpg',
+                    title: 'Upload Prescripation',
+                    imageUrl: 'https://i.ytimg.com/vi/EvTehblWTS8/maxresdefault.jpg',
                     id: 3,
                     linkUrl: ''
                 },
                 {
-                    title: 'womens',
-                    imageUrl: 'http://g02.a.alicdn.com/kf/HTB1sqFfIXXXXXaEXFXXq6xXFXXXx/Spring-2014-New-Models-Women-s-Embroidery-Flowery-White-Dress-Size-S-M-L-XL-Ladies.jpg',
+                    title: 'Online Doctor',
+                    imageUrl: 'https://wishhealth.in/blog/wp-content/uploads/2018/10/blogo-1.jpg',
                     size: 'large',
                     id: 4,
                     linkUrl: ''
                 },
                 {
-                    title: 'mens',
-                    imageUrl: 'https://www.clothingsupplier.com/blue-checked-vested-suit-i-clos-dz-takm-elbise-wessi-52911-65-O.jpg',
+                    title: 'Health Education & News',
+                    imageUrl: 'http://4designer.t7yb.net/files/20151019/HD-Medical-element-54865.jpg',
                     size: 'large',
                     id: 5,
                     linkUrl: ''

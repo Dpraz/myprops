@@ -1,32 +1,32 @@
-const ShopData = [
+const SHOP_DATA = [
     {
         id: 1,
-        title: 'Hats',
-        routeName: 'hats',
+        title: 'Baby Care',
+        routeName: 'baby',
         items: [
             {
                 id: 1,
-                name: 'Brown Brim',
-                imageUrl: 'data:image/jpeg;base64,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',
-                price: 25
+                name: 'Pampers Premium Care Pant',
+                imageUrl: 'https://cdn.fcglcdn.com/brainbees/images/products/438x531/2163913a.jpg',
+                price: 681
             },
             {
                 id: 2,
-                name: 'Blue Beanie',
-                imageUrl: 'https://i.ibb.co/ypkgK0X/blue-beanie.png',
-                price: 18
+                name: 'Nestle Cerlac',
+                imageUrl: 'https://images-na.ssl-images-amazon.com/images/I/81%2BjQkH%2BzgL._SL1500_.jpg',
+                price: 180
             },
             {
                 id: 3,
-                name: 'Brown Cowboy',
-                imageUrl: 'https://i.ibb.co/QdJwgmp/brown-cowboy.png',
-                price: 35
+                name: 'Baby Rocker Chair',
+                imageUrl: 'https://parentsneed.com/wp-content/uploads/2016/05/Top-5-Best-Baby-Rocker-Chairs.jpg',
+                price: 4699
             },
             {
                 id: 4,
-                name: 'Grey Brim',
-                imageUrl: 'https://i.ibb.co/RjBLWxB/grey-brim.png',
-                price: 25
+                name: 'Medicine Kit',
+                imageUrl: 'https://i.pinimg.com/originals/f8/29/37/f82937e41d6b96c269097657f6192a95.png',
+                price: 2500
             },
             {
                 id: 5,
@@ -62,31 +62,31 @@ const ShopData = [
     },
     {
         id: 2,
-        title: 'Sneakers',
-        routeName: 'sneakers',
+        title: 'Womens Care',
+        routeName: 'women',
         items: [
             {
                 id: 10,
-                name: 'Adidas NMD',
-                imageUrl: 'https://i.ibb.co/0s3pdnc/adidas-nmd.png',
+                name: 'Women Horlicks',
+                imageUrl: 'http://ronnysequeira.com/wp-content/uploads/2018/03/advt-21_2.jpg',
                 price: 220
             },
             {
                 id: 11,
-                name: 'Adidas Yeezy',
-                imageUrl: 'https://i.ibb.co/dJbG1cT/yeezy.png',
-                price: 280
+                name: 'Stayfree Dry Max',
+                imageUrl: 'https://images-na.ssl-images-amazon.com/images/I/81XzOBFZVgL._SL1500_.jpg',
+                price: 150
             },
             {
                 id: 12,
-                name: 'Black Converse',
-                imageUrl: 'https://i.ibb.co/bPmVXyP/black-converse.png',
-                price: 110
+                name: 'Prenatal',
+                imageUrl: 'https://images-na.ssl-images-amazon.com/images/I/91RGW1N9zDL._SL1500_.jpg',
+                price: 210
             },
             {
                 id: 13,
-                name: 'Nike White AirForce',
-                imageUrl: 'https://i.ibb.co/1RcFPk0/white-nike-high-tops.png',
+                name: 'Sarika Sudha',
+                imageUrl: 'https://img1.exportersindia.com/product_images/bc-full/dir_143/4269180/sarika-sudha-syrup-1513249236-3521410.jpeg',
                 price: 160
             },
             {
@@ -117,32 +117,32 @@ const ShopData = [
     },
     {
         id: 3,
-        title: 'Jackets',
-        routeName: 'jackets',
+        title: 'Aayurvedic',
+        routeName: 'auv',
         items: [
             {
                 id: 18,
-                name: 'Black Jean Shearling',
-                imageUrl: 'https://i.ibb.co/XzcwL5s/black-shearling.png',
-                price: 125
+                name: 'Ancient Collection ',
+                imageUrl: 'https://media.istockphoto.com/photos/ayurvedic-doctor-picture-id489931422?k=6&m=489931422&s=612x612&w=0&h=pzVVc835FeJJxoYy4nmjIluZ_ynhckhv6AmqD9GlDEQ=',
+                price: 1500
             },
             {
                 id: 19,
-                name: 'Blue Jean Jacket',
-                imageUrl: 'https://i.ibb.co/mJS6vz0/blue-jean-jacket.png',
-                price: 90
+                name: 'Dabur Honey 500g',
+                imageUrl: 'https://n2.sdlcdn.com/imgs/c/z/9/Honey500gm_100gm-57ab0.jpg',
+                price: 190
             },
             {
                 id: 20,
-                name: 'Grey Jean Jacket',
-                imageUrl: 'https://i.ibb.co/N71k1ML/grey-jean-jacket.png',
-                price: 90
+                name: 'Yoga KIt',
+                imageUrl: 'https://media1.fdncms.com/orlando/imager/u/slideshow/7876638/ec6c99ce_outdoor_yoga.jpg',
+                price: 3000
             },
             {
                 id: 21,
-                name: 'Brown Shearling',
-                imageUrl: 'https://i.ibb.co/s96FpdP/brown-shearling.png',
-                price: 165
+                name: 'Patanjali Pack',
+                imageUrl: 'https://buddybits.com/wp-content/uploads/2016/04/10-Reasons-why-you-should-actually-use-Patanjali-products.jpg',
+                price: 2500
             },
             {
                 id: 22,
@@ -154,32 +154,32 @@ const ShopData = [
     },
     {
         id: 4,
-        title: 'Womens',
-        routeName: 'womens',
+        title: 'Fitness & Wellness',
+        routeName: 'fit',
         items: [
             {
                 id: 23,
-                name: 'Blue Tanktop',
-                imageUrl: 'https://i.ibb.co/7CQVJNm/blue-tank.png',
-                price: 25
+                name: 'Fitness Tracker',
+                imageUrl: 'https://www.health.harvard.edu/media/content/images/fitness-tracker-app-exercise-healthiStock_000052219398_Medium.jpg',
+                price: 25000
             },
             {
                 id: 24,
-                name: 'Floral Blouse',
-                imageUrl: 'https://i.ibb.co/4W2DGKm/floral-blouse.png',
-                price: 20
+                name: 'TradeMill',
+                imageUrl: 'https://images-na.ssl-images-amazon.com/images/I/61a0INALOJL._SL1200_.jpg',
+                price: 1000
             },
             {
                 id: 25,
-                name: 'Floral Dress',
-                imageUrl: 'https://i.ibb.co/KV18Ysr/floral-skirt.png',
-                price: 80
+                name: 'Diabetes Insullin',
+                imageUrl: 'https://lh3.googleusercontent.com/p2D4FL_HVUbm_1aiSGZO_liIWj7rhnZVaK4oJ_wECsuYkz0OaX24LgBpkuP_tyaWhd_FUBqxMGCkNk_gdsL4sA=s750',
+                price: 800
             },
             {
                 id: 26,
-                name: 'Red Dots Dress',
-                imageUrl: 'https://i.ibb.co/N3BN1bh/red-polka-dot-dress.png',
-                price: 80
+                name: 'Fitness Recipe',
+                imageUrl: 'https://images-na.ssl-images-amazon.com/images/I/91zQ3ntA7ZL.jpg',
+                price: 500
             },
             {
                 id: 27,
@@ -203,32 +203,32 @@ const ShopData = [
     },
     {
         id: 5,
-        title: 'Mens',
-        routeName: 'mens',
+        title: 'Daily Needs',
+        routeName: 'daily',
         items: [
             {
                 id: 30,
-                name: 'Camo Down Vest',
-                imageUrl: 'https://i.ibb.co/xJS0T3Y/camo-vest.png',
-                price: 325
+                name: 'Sensodyne',
+                imageUrl: 'https://n4.sdlcdn.com/imgs/e/d/g/sensodyne-d3ef7.png',
+                price: 125
             },
             {
                 id: 31,
-                name: 'Floral T-shirt',
-                imageUrl: 'https://i.ibb.co/qMQ75QZ/floral-shirt.png',
-                price: 20
+                name: 'Dabur Amala',
+                imageUrl: 'https://n3.sdlcdn.com/imgs/e/o/f/Amlapack-95aa0.jpg',
+                price: 80
             },
             {
                 id: 32,
-                name: 'Black & White Longsleeve',
-                imageUrl: 'https://i.ibb.co/55z32tw/long-sleeve.png',
-                price: 25
+                name: 'Fragrances',
+                imageUrl: 'https://hips.hearstapps.com/harpersbazaaruk.cdnds.net/17/35/1503999676-histoire-dorangers-100ml-hr.jpg',
+                price: 5550
             },
             {
                 id: 33,
-                name: 'Pink T-shirt',
-                imageUrl: 'https://i.ibb.co/RvwnBL8/pink-shirt.png',
-                price: 25
+                name: 'Olay',
+                imageUrl: 'https://cdn2.stylecraze.com/wp-content/uploads/2014/01/1230_Best-Celebrity-Skin-Care-Products-%E2%80%93-Our-Top-10-Picks.jpg_1.jpg',
+                price: 700
             },
             {
                 id: 34,
@@ -246,4 +246,4 @@ const ShopData = [
     }
 ];
 
-export default ShopData;
+export default SHOP_DATA;

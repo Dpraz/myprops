@@ -2,6 +2,7 @@ import React from 'react';
 import FormInputComponent from '../forminputcomponent/FormInputComponent';
 import CustomButtonComponent from '../custom-button/CustomButtonComponent';
 import { auth, signInWithGoogle } from '../../firebase/firebase-utils';
+import { withRouter } from 'react-router-dom'
 import './SigninComponent.scss';
 
 class SigninComponent extends React.Component {
@@ -22,6 +23,11 @@ class SigninComponent extends React.Component {
                 email,
                 password
             );
+            auth().onAuthStateChanged(user => {
+                if (user) {
+                    this.props.history.push('/')
+                }
+            })
             this.setState({ email: '', password: '' })
         } catch (error) {
             console.error(error);
@@ -70,7 +76,7 @@ class SigninComponent extends React.Component {
     }
 }
 
-export default SigninComponent;
+export default withRouter(SigninComponent);
 
 
 

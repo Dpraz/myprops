@@ -13,7 +13,9 @@
       background-position: center;
       margin-bottom: 5px;
       transition: width 2s;
-      transition: all ease-in-out o.5s;
+      transition: all ease-in-out 0.2s;
+      position: relative;
+      top: 0;
     }
     .custom-button{
       width: 80%;
@@ -24,8 +26,7 @@
     }
     &:hover{
       .image{
-        opacity: 0.5;
-       
+        top: -3px;
       }
       .custom-button{
         opacity: 0.85;
@@ -42,7 +43,7 @@
       font-size: 18px;
   
       .name {
-        width: 90%;
+        width: 70%;
         margin-bottom: 15px;
       }
   
