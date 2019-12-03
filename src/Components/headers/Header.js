@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
 import { ReactComponent as Logo } from '../../assets/crown.svg'
 import './Header.scss'
-import { auth } from '../../firebase/firebase-utils';
+import { signOut } from '../../firebase/firebase-utils';
 import CardItem from '../card-item/CardItem'
 import Cart from '../cart-component/Cart'
 import { createStructuredSelector } from 'reselect';
@@ -21,8 +21,7 @@ const Header = ({ currentUser, hidden, history }) => {
                 <Link className="option" to="/contact">MORE</Link>
                 <CardItem />
                 {currentUser ?
-                    (<div className='option'
-                        onClick={() => auth.signOut()}>
+                    (<div className='option' >
                         SIGN OUT
                   </div>)
                     : (
@@ -30,6 +29,7 @@ const Header = ({ currentUser, hidden, history }) => {
                             SIGNIN
                         </Link>)
                 }
+
             </div>
             {
                 hidden ? null : <Cart />

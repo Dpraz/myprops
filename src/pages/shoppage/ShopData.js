@@ -8,7 +8,7 @@ const SHOP_DATA = [
                 id: 1,
                 name: 'Pampers Premium Care Pant',
                 imageUrl: 'https://cdn.fcglcdn.com/brainbees/images/products/438x531/2163913a.jpg',
-                price: 681
+                price: 599
             },
             {
                 id: 2,
